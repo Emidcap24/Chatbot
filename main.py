@@ -24,6 +24,10 @@ else:
 
 print(" since we have to rock genres lets play Rock Paper scizzors!")
 
+
+#create a list of play options
+t = ["Rock", "Paper", "Scissors"]
+
 #assign a random play to the computer
 computer = t[randint(0,2)]
 
@@ -55,5 +59,4 @@ while player == False:
     #player was set to True, but we want it to be False so the loop continues
     player = False
     computer = t[randint(0,2)]
-
 
