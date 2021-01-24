@@ -1,28 +1,46 @@
+#Get's users name 
 name = input("Enter your name:")
 print("Hello,", name,)
 
+#Asks the first question 
 Q1 =input("How are you feeling?\n A.Good \n B.Bad ")
 if Q1 == "A":
+    print("Great!")
+else:
+    print("Oh, I hope you feel better soon")
+
+#Asks the second question 
+Q2 =input("Does music interest you\n A.yes \n B.no ")
+if Q2 == "A":
     print("Great! Let's get started")
 else:
-    print("Oh, I hope you feel better soon, Let's get started")
+    print("Oh,Well, I'm going to ask you about it anyway")
 
+#Asks the third question 
+Q3 =input("Do you prefer new or old music? \n A.New \n B.Old ")
+if Q3 == "A":
+    print("Cool!Post Malone was the top artist of 2020")
+else:
+    print("Cool! The Beatles were at the top of the chain in the 60's")
+
+#imports new modules
 import time
 import random
 import sys
 from random import randint  
+#about website 
+print("My website has to do a lot with music so I'll ask a few questions about your interests. What my website does is takes the answers to qustions and gives musical suggestions/ facts. It also plays a small mini game. ")
 
-print("My website has to do a lot with music so I'll ask a few questions about your interests. What my website does is takes the answers to qustions and gives musical suggestions/ facts. It also plays small mini games. ")
-
-d1 = input("what are your main musical interests out of these options? a.Rock N' Roll  b.Pop music c.Alternative Rock  ")
-if d1 == "a":
+#Asks the fourth question 
+Q4 = input("what are your main musical interests out of these options? a.Rock N' Roll  b.Pop music c.Alternative Rock  ")
+if Q4 == "a":
     input(" Some of the most popular rock n roll songs are Highway to hell by AC/DC, Aerosmith's Walk This Way, and Led Zeppelin's, Whole Lotta Love.)")
-if d1 == "b": 
+if Q4 == "b": 
   print("Some of the most popular pop artists of 2020 were Taylor Swift, Ariana Grande,and Ed Sheeran")
 else: 
   input(" The origins of alternative rock can be traced back to 1967  with the band Velvet Underground, which influenced many alternative rock bands that would come after it.")
-
-print(" since we have to rock genres lets play Rock Paper scizzors!")
+#5th question/ mini game 
+print(" since we have multiple rock genres lets play Rock Paper scizzors!")
 
 
 #create a list of play options
